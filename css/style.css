@@ -116,13 +116,23 @@ a{
   margin-top: 0 auto;
 
 }
+.reasons-container{
+  max-width: 1000px;
+  margin: 40px auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-flow: column;
+}
 .reason{
   background: #3f4e87;
   padding: 10px;
+  flex-flow: : 90%;
+  margin-bottom: 10px;
+  box-sizing: border-box;
   color: #fff;
   text-align: center;
-  display: flex;
-  flex-direction: column;
+  flex-direction: column; 
 }
 .reason__text{
   margin-top:0 auto;
@@ -139,7 +149,7 @@ a{
 }
 .row{
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: wrap;
   
 }
 .row__no-margin{
@@ -152,7 +162,14 @@ a{
 }
 .reasons [class*="column"]{
   display: flex;
+  flex-flow: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+
 }
+.reason > div:nth-of-type(3n+2) .reason{
+  margin: 5px 10px;
+  }
 
 .col-no-pad{
   padding: 0;
@@ -256,5 +273,7 @@ left: 0; }
   }
   .reason > div:nth-of-type(3n+2) .reason{
   margin: 5px 10px;
+  max-width: 75%;
+  
 }
 }
